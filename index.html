@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 이야기</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="lock-screen">
+        <h1>오늘의 이야기</h1>
+        <p>비밀번호를 입력해주세요 🔒</p>
+        <div id="dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div id="keypad">
+            <button onclick="addNumber(1)">1</button>
+            <button onclick="addNumber(2)">2</button>
+            <button onclick="addNumber(3)">3</button>
+            <button onclick="addNumber(4)">4</button>
+            <button onclick="addNumber(5)">5</button>
+            <button onclick="addNumber(6)">6</button>
+            <button onclick="addNumber(7)">7</button>
+            <button onclick="addNumber(8)">8</button>
+            <button onclick="addNumber(9)">9</button>
+            <button onclick="clearNumber()">지우기</button>
+            <button onclick="addNumber(0)">0</button>
+            <button style="visibility: hidden;"></button> </div>
+    </div>
+
+    <div id="main-screen" class="hidden">
+        <h1>환영합니다! 일기장 메인 화면입니다. 🎉</h1>
+        <p>여기에 날씨, 사진 칸, 일기 쓰는 곳이 들어갈 거예요.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
