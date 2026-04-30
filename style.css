@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif; /* 귀여운 폰트 적용 */
+}
+
+body {
+    background-color: #FFF9E6; /* 따뜻한 파스텔 옐로우 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #555;
+}
+
+#lock-screen, #main-screen {
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* 비밀번호 입력 점 */
+#dots {
+    margin: 30px 0;
+}
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.dot.active {
+    background-color: #FFB7B2; /* 입력 시 파스텔 핑크색으로 변경 */
+}
+
+/* 키패드 버튼 */
+#keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+#keypad button {
+    background-color: #F5F5F5;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 50%; /* 동그란 버튼 */
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 auto;
+}
+#keypad button:active {
+    background-color: #E0E0E0; /* 클릭할 때 살짝 어두워짐 */
+}
